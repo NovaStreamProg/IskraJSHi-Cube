@@ -1,4 +1,5 @@
-﻿var player = require('@amperka/ringtone').create(P6);
+//стартовая мелодия
+var player = require('@amperka/ringtone').create(P6);
 
 var melody = 'Flinstones:d=4,o=5,b=40:32p,16f6,16a#,' +
   '16a#6,32g6,16f6,16a#.,16f6,32d#6,32d6,32d6,32d#6,' +
@@ -13,7 +14,7 @@ var melody = 'Flinstones:d=4,o=5,b=40:32p,16f6,16a#,' +
 player.play(melody).then(function() {
   print('Melody completed');
 });
-
+//переменые
 var s = require('@amperka/light-sensor')
  .connect(A5);
 
@@ -28,7 +29,7 @@ var button = require('@amperka/button')
 
 var led = require('@amperka/led')
   .connect(P5);
-
+//действия - оснавная часть проекта
 button.on('click', function() {
 var lx = s.read('lx').toFixed(0);
  console.log(lx, 'люкс');
