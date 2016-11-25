@@ -1,5 +1,5 @@
 //стартовая мелодия
-var player = require('@amperka/ringtone').create(P6);
+var player = require('@amperka/ringtone').create(P1);
 
 var melody = 'Flinstones:d=4,o=5,b=40:32p,16f6,16a#,' +
   '16a#6,32g6,16f6,16a#.,16f6,32d#6,32d6,32d6,32d#6,' +
